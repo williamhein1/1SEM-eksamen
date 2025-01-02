@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "BoB";
+  src: url("../fonts/BoB.ttf");
+}
+
+@font-face {
+  font-family: "Oliver-Regular";
+  src: url("../fonts/Oliver-Regular.ttf");
+}
+
+html {
+  --background_color: #fffdf8;
+  --main_color: #122adf;
+  --h123_font: "BoB";
+  --p_font: "Oliver-Regular";
+}
+
+body {
+  background-color: var(--background_color);
+  margin: 1rem;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--h123_font);
+  color: var(--main_color);
+}
+
+p {
+  font-family: "Oliver-Regular";
+}
+
+.h1-forside {
+  font-size: 32pt;
+  text-align: center;
+}
+
+.global_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: var(--h123_font);
+}
+
+.global_menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.global_menu a {
+  text-decoration: none;
+  color: var(--main_color);
+}
+
+.logo {
+  height: 40px;
+  margin: 0;
+}
+
+.background-text {
+  font-family: var(--h123_font);
+  font-size: 190pt;
+  color: transparent;
+  -webkit-text-stroke: var(--main_color) 1px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.old-background {
+  font-family: var(--h123_font);
+  color: transparent;
+  -webkit-text-stroke: var(--main_color) 1px;
+  font-size: 30pt;
+  transition: color 0.1s;
+}
+
+.old-background:hover {
+  color: var(--main_color);
+}
+
+.a-short-talk-background {
+  font-family: var(--h123_font);
+  color: transparent;
+  -webkit-text-stroke: var(--main_color) 1px;
+  font-size: 30pt;
+  transition: color 0.1s;
+}
+
+.a-short-talk-background:hover {
+  color: var(--main_color);
+}
+
+.fodboldspillet-background {
+  font-family: var(--h123_font);
+  color: transparent;
+  -webkit-text-stroke: var(--main_color) 1px;
+  font-size: 30pt;
+  transition: color 0.1s;
+}
+
+.fodboldspillet-background:hover {
+  color: var(--main_color);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.arrow {
+  height: 20px;
+}
+
+.arrow-container {
+  text-align: center;
+}
+
+.menu-link {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+
+.menu-link:hover,
+.menu-link:active,
+.menu-link:visited {
+  border-color: black;
+}
